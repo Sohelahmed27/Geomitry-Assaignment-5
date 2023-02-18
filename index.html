@@ -42,10 +42,10 @@
               <div class="card-body">
                 <h5 class="card-title">Rectangle</h5>
                 <p class="card-text">Area (A)=l*b</p>
-                <input type="number" class="w-25"
+                <input id="length-rec" type="number" class="w-25"
                 placeholder="l">
                 <label for="cm">cm</label>
-                <input type="number" class="w-25"
+                <input id="width-rec" type="number" class="w-25"
                 placeholder="b">
                 <label for="cm">cm</label>
               </div>
@@ -61,10 +61,10 @@
               <div class="card-body">
                 <h5 class="card-title">Parallelogram</h5>
                 <p class="card-text">Area (A)=b*h</p>
-                <input type="number" class="w-25"
+                <input id="base-para" type="number" class="w-25"
                 placeholder="b">
                 <label for="cm">cm</label>
-                <input type="number" class="w-25"
+                <input id="height-para" type="number" class="w-25"
                 placeholder="h">
                 <label for="cm">cm</label>
               </div>
@@ -81,10 +81,10 @@
               <div class="card-body">
                 <h5 class="card-title">Rhombus</h5>
                 <p class="card-text">Area (A)=.5*d<sub>1</sub>*d<sub>2</sub> </p>
-                <input type="number" class="w-25"
+                <input id="digonal1" type="number" class="w-25"
                 placeholder="d1">
                 <label for="cm">cm</label>
-                <input type="number" class="w-25"
+                <input id="digonal2" type="number" class="w-25"
                 placeholder="d2">
                 <label for="cm">cm</label>
               </div>
@@ -99,11 +99,11 @@
               <div class="card-body">
                 <h5 class="card-title">Pentagon</h5>
                 <p class="card-text">Area (A)=.5*b*h</p>
-                <input type="number" class="w-25"
+                <input id="base-penta" type="number" class="w-25"
                 placeholder="b">
                 <label for="cm">cm</label>
-                <input type="number" class="w-25"
-                placeholder="h">
+                <input id="peri-penta" type="number" class="w-25"
+                placeholder="p">
                 <label for="cm">cm</label>
               </div>
               <div class="card-footer">
@@ -135,7 +135,7 @@
       <div class="col-sm-4 my-4 p-2">
         <div class="card h-50 border-success mb-3" style="max-width: 18rem;">
           <div class="card-header">Area Calculations</div>
-          <div id="result-card" class="card-body  text-success">
+          <div id="result-card">
           </div>
         </div>
       </div>
