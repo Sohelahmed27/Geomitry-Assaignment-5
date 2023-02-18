@@ -30,10 +30,9 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
   addToCard('Pentagon Area', result);
 })
 document.getElementById('btn-ecllipse').addEventListener('click', function(){
-  const base = getElementById('base-tri');
-  console.log(base);
-  const height = getElementById('height-tri');
-  const result =(.5*base*height).toFixed(2);
-  addToCard('Triangle', result);
+  const a = getElementById('a');
+  const b = getElementById('b');
+  const result =(3.14*a*b).toFixed(2);
+  addToCard('Ecllipse Area', result);
 
 })
