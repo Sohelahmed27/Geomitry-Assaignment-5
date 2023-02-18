@@ -1,13 +1,23 @@
 document.getElementById('btn-triangle').addEventListener('click', function(){
   const base = getElementById('base-tri');
-  console.log(base);
   const height = getElementById('height-tri');
+
+  // validation
+  if (isNaN(base || height)){
+    alert("Input is not a number");
+    return;
+  } 
   const result =(.5*base*height).toFixed(2);
   addToCard('Triangle Area', result);
 })
 document.getElementById('btn-rectagle').addEventListener('click', function(){
   const width = getElementById('width-rec');
   const length = getElementById('length-rec');
+  // validation
+  if (isNaN(width || length)){
+    alert("Input is not a number");
+    return;
+  }
   const result =(width*length).toFixed(2);
   addToCard('Rectangle Area', result);
 })
