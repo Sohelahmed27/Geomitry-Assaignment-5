@@ -18,20 +18,20 @@
       <div class="col-sm-8">
         <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
           <div class="col">
-            <div class="card h-80">
+            <div class="card h-100">
               <img class="p-4" src="images/triangle.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Triangle</h5>
                 <p class="card-text">Area (A)=.5*b*h</p>
-                <input type="number" class="w-25"
+                <input id="base-tri" type="number" class="w-25"
                 placeholder="b">
                 <label for="cm">cm</label>
-                <input type="number" class="w-25"
+                <input id="height-tri" type="number" class="w-25"
                 placeholder="h">
                 <label for="cm">cm</label>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-primary px-5" >Calculate</button>
+                <button id="btn-triangle" type="button" class="btn btn-primary px-5" >Calculate</button>
               </div>
             </div>
           </div>
@@ -50,7 +50,8 @@
                 <label for="cm">cm</label>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-primary px-5" >Calculate</button>
+                <button id="btn-rectagle" type="button" class="btn btn-primary px-5" >Ca
+                  lculate</button>
               </div>
             </div>
           </div>
@@ -68,7 +69,7 @@
                 <label for="cm">cm</label>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-primary px-5" >Calculate</button>
+                <button id="btn-parallogram" type="button" class="btn btn-primary px-5" >Calculate</button>
               </div>
             </div>
           </div>
@@ -88,7 +89,7 @@
                 <label for="cm">cm</label>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-primary px-5" >Calculate</button>
+                <button id="btn-rhombus" type="button" class="btn btn-primary px-5" >Calculate</button>
               </div>
             </div>
           </div>
@@ -106,7 +107,7 @@
                 <label for="cm">cm</label>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-primary px-5" >Calculate</button>
+                <button id="btn-pentagon" type="button" class="btn btn-primary px-5" >Calculate</button>
               </div>
             </div>
           </div>
@@ -124,16 +125,17 @@
                 <label for="cm">cm</label>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-primary px-5" >Calculate</button>
+                <button id="btn-ecllipse" type="button" class="btn btn-primary px-5" >Calculate</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
+      <!-- Calculation area -->
+      <div class="col-sm-4 my-4 p-2">
         <div class="card h-50 border-success mb-3" style="max-width: 18rem;">
           <div class="card-header">Area Calculations</div>
-          <div class="card-body  text-success">
+          <div id="result-card" class="card-body  text-success">
           </div>
         </div>
       </div>
@@ -141,5 +143,7 @@
   </div>
  </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="js/common.js"></script>
+  <script src="js/calculate.js"></script>
 </body>
 </html>
