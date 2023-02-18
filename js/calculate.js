@@ -103,3 +103,9 @@ document.getElementById('btn-ecllipse').addEventListener('click', function(){
   addToCard('Ecllipse Area', result);
 
 })
+
+//blog
+
+document.getElementById('blog').addEventListener('click', function(){
+  window.location.href = 'http://127.0.0.1:5500/blogs.html';
+})
