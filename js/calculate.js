@@ -1,4 +1,6 @@
+let serial = 0;
 document.getElementById('btn-triangle').addEventListener('click', function(){
+  serial=serial+1;
   const base = getElementById('base-tri');
   const height = getElementById('height-tri');
 
@@ -12,11 +14,12 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     alert("Input a Positive number");
     return;
   }
-  addToCard('Triangle Area', result);
+  addToCard(serial,'Triangle Area', result);
 })
 
 // Calculate rectangle Area
 document.getElementById('btn-rectagle').addEventListener('click', function(){
+  serial=serial+1;
   const width = getElementById('width-rec');
   const length = getElementById('length-rec');
   // validation
@@ -29,11 +32,12 @@ document.getElementById('btn-rectagle').addEventListener('click', function(){
     alert("Input a Positive number");
     return;
   }
-  addToCard('Rectangle Area', result);
+  addToCard(serial, 'Rectangle Area', result);
 })
 
 // Calculate parallogram Area
 document.getElementById('btn-parallogram').addEventListener('click', function(){
+  serial=serial+1;
   const base = getElementById('base-para');
   const height = getElementById('height-para');
   // validation
@@ -47,11 +51,12 @@ document.getElementById('btn-parallogram').addEventListener('click', function(){
     return;
   }
 
-  addToCard('Parallogram', result);
+  addToCard(serial,'Parallogram Area', result);
 })
 
 // Calculate rhombus Area
 document.getElementById('btn-rhombus').addEventListener('click', function(){
+  serial=serial+1;
   const digonal1 = getElementById('digonal1');
   const digonal2 = getElementById('digonal2');
 
@@ -65,11 +70,12 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
     alert("Input a Positive number");
     return;
   }
-  addToCard('Rhombus Area', result);
+  addToCard(serial,'Rhombus Area', result);
 })
 
 // Calculate pentagon Area
 document.getElementById('btn-pentagon').addEventListener('click', function(){
+  serial=serial+1;
   const base = getElementById('base-penta');
   const height = getElementById('peri-penta');
   // Validation
@@ -83,11 +89,12 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
     alert("Input a Positive number");
     return;
   }
-  addToCard('Pentagon Area', result);
+  addToCard(serial,'Pentagon Area', result);
 })
 
 // Calculate ecllipse Area
 document.getElementById('btn-ecllipse').addEventListener('click', function(){
+  serial=serial+1;
   const a = getElementById('a');
   const b = getElementById('b');
 
@@ -100,7 +107,7 @@ document.getElementById('btn-ecllipse').addEventListener('click', function(){
     alert("Input a Positive number");
     return;
   }
-  addToCard('Ecllipse Area', result);
+  addToCard(serial,'Ecllipse Area', result);
 
 })
 
@@ -109,3 +116,10 @@ document.getElementById('btn-ecllipse').addEventListener('click', function(){
 document.getElementById('blog').addEventListener('click', function(){
   window.location.href = 'http://127.0.0.1:5500/blogs.html';
 })
+
+//Random Color of Card
+
+function changeBackgroundColor(element) {
+  var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); 
+  element.style.backgroundColor = randomColor; 
+}

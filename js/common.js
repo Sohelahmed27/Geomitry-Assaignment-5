@@ -5,11 +5,12 @@ function getElementById(elementId) {
   return element;
 }
 
-function addToCard(AreaName, result){
+function addToCard(serial,AreaName, result){
   const container = document.getElementById('result-card');
-  const h5 = document.createElement('h5');
-  h5.innerHTML =`<ul><li>${AreaName}: ${result} cm<sup>2</sup></li></ul>`
-  container.appendChild(h5);
-  
-  // const newResult = document.createElement('div');
+  const tr = document.createElement('tr');
+  tr.innerHTML =`<tr>
+                    <td>${serial}.</td>
+                    <td>${AreaName}: ${result} cm<sup>2</sup></td>
+                    </tr>`
+  container.appendChild(tr);
 }
